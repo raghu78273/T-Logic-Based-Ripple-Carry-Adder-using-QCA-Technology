@@ -1,14 +1,43 @@
-# T-Logic-Based Ripple Carry Adder Using QCA Technology
+# QCA-TLogic-Ripple-Carry-Adder
 
-## Overview
-This project implements a **Ripple Carry Adder (RCA)** using **T-Logic** in **Quantum-dot Cellular Automata (QCA)** technology — a nano-scale computing paradigm that uses electron positions in quantum dots to represent binary data, offering ultra-low power consumption compared to CMOS.
+## What is QCA?
+Quantum-dot Cellular Automata (QCA) is a nano-scale computing technology
+that represents binary data using the position of electrons in quantum dots
+rather than voltage levels. It offers:
+- Ultra-low power consumption compared to CMOS
+- Extremely high device density
+- Faster switching at the nanometer scale
+
+## Why Ripple Carry Adder?
+The Ripple Carry Adder (RCA) is a fundamental arithmetic circuit used in
+ALUs and processors. Implementing RCA in QCA demonstrates the feasibility
+of building complete arithmetic logic in nano-scale technology, which is
+critical for future ultra-low-power computing systems.
+
+## Why T-Logic?
+Traditional QCA design uses majority gates, which require complex wiring
+routing and multi-layer crossings. **T-Logic** is an alternative QCA logic
+family that:
+- Reduces cell count compared to majority-gate designs
+- Simplifies circuit layout
+- Enables cleaner multilayer QCA structures
+- Improves overall area efficiency
 
 ## Circuits Designed
-- **T-Logic XOR Gate** — fundamental building block using QCA T-gates
-- **Full Adder** — designed using T-Logic XOR and majority gates
-- **Ripple Carry Adder (RCA)** — cascaded Full Adders for multi-bit addition
-- **Ripple Carry Subtractor (RCS)** — subtraction using complement logic
-- **Comparator** — magnitude comparison circuit in QCA
+| Circuit | Description |
+|---------|-------------|
+| T-Logic XOR Gate | Fundamental building block using QCA T-gates |
+| Full Adder | Designed using T-Logic XOR and majority gates |
+| Ripple Carry Adder (RCA) | Cascaded Full Adders for multi-bit addition |
+| Ripple Carry Subtractor (RCS) | Subtraction using complement logic |
+| Comparator | Magnitude comparison circuit in QCA |
+
+## Key Results & Advantages
+- Reduced cell count vs standard majority-gate QCA implementation
+- Multilayer QCA structures eliminate wire crossing issues
+- Validated all circuit outputs through QCA Designer simulation
+- Demonstrates T-Logic as a viable alternative for arithmetic circuit design
+- Compared the T-Logic approach with standard majority-gate-based QCA design
 
 ## Technology
 | Tool | Purpose |
@@ -17,13 +46,8 @@ This project implements a **Ripple Carry Adder (RCA)** using **T-Logic** in **Qu
 | T-Logic Gates | Alternative QCA logic family |
 | Multilayer QCA | 3D wire crossing without signal interference |
 
-## Key Features
-- Implemented in **multilayer QCA** structures to avoid wire crossings
-- Validated all circuit outputs through **QCA Designer simulation**
-- Compared the T-Logic approach with the standard majority-gate-based QCA design
-
 ## Tools Used
-- **QCA Designer** — open-source QCA simulation tool
+- **QCA Designer** — open-source QCA circuit design and simulation tool
 
 ## Author
 **Sarisa Raghuveer** — B.Tech ECE, IIIT Sri City (2023–2027)
